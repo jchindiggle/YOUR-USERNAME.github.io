@@ -209,24 +209,76 @@
       </div>
     </section>
 
-    <section id="glance" class="section card">
-  <h2>Keystone at a Glance</h2>
-  <p class="muted" style="margin-top:4px">
-    A student-run, hedge-fund-style investment organization at <strong>Harvard College</strong>.
-    Member-managed; research-driven; based in Cambridge, Massachusetts.
-  </p>
+    <!-- Keystone: Two-card "Who We Are" + "At a Glance" -->
+<section class="k-deck" id="overview">
+  <div class="k-card">
+    <h2>Who We Are</h2>
+    <p class="k-muted">
+      Keystone Investment Partners is a student-run, hedge-fund-style organization at
+      <strong>Harvard College</strong>. We pursue public-markets research and portfolio
+      construction in a member-managed investment-club format.
+    </p>
+    <ul class="k-list">
+      <li><strong>Approach:</strong> research-driven, evidence-based, risk-aware.</li>
+      <li><strong>Structure:</strong> private partnership; decisions by member vote; execution by authorized co-partners.</li>
+      <li><strong>Ethos:</strong> humility, transparency, and long-term stewardship.</li>
+    </ul>
+  </div>
 
-  <div class="grid" style="margin-top:12px">
-    <div>
-      <h3>Who We Are</h3>
-      <ul>
-        <li><span class="pill">Student-run · Harvard College</span></li>
-        <li><strong>Structure:</strong> private, member-managed investment club (partnership).</li>
-        <li><strong>Focus:</strong> public-markets research, portfolio construction, risk management.</li>
-        <li><strong>Governance:</strong> proposals and trades approved by member vote; execution by authorized co-partners.</li>
-      </ul>
-    </div>
-    </section>
+  <div class="k-card">
+    <h2>At a Glance</h2>
+    <dl class="k-stats">
+      <div class="k-row"><dt>Base</dt><dd>Harvard College · Cambridge, MA</dd></div>
+      <div class="k-row"><dt>Co-Partners</dt><dd>
+        Joshua Chen <a href="tel:+15157158677">(515) 715-8677</a><br>
+        Marre Gattnar <a href="tel:+14159366305">(415) 936-6305</a><br>
+        Mert Iravul <a href="tel:+16172017016">(617) 201-7016</a>
+      </dd></div>
+      <div class="k-row"><dt>Email</dt><dd><a href="mailto:keystonepartnercontact@gmail.com">keystonepartnercontact@gmail.com</a></dd></div>
+      <div class="k-row"><dt>Address</dt><dd>28 Dewolfe Street, Cambridge, MA 02138</dd></div>
+      <div class="k-row"><dt>Past Strategies</dt><dd>None published yet</dd></div>
+    </dl>
+  </div>
+</section>
+
+<style>
+/* --- Two-card deck styled to match your dark boxes --- */
+:root{
+  --k-bg:#0b1220;
+  --k-card:#0f1b2e;
+  --k-border:#243149;
+  --k-text:#e6edf7;
+  --k-muted:#a9b4c6;
+}
+#overview{margin:24px 0}
+.k-deck{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:980px){.k-deck{grid-template-columns:1fr 1fr}}
+.k-card{
+  background:var(--k-card);
+  color:var(--k-text);
+  border:1px solid var(--k-border);
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 8px 28px rgba(0,0,0,.25)
+}
+.k-card h2{margin:0 0 12px;font-size:28px;letter-spacing:.2px}
+.k-muted{color:var(--k-muted)}
+.k-list{margin:8px 0 0 18px}
+.k-list li{margin:6px 0}
+.k-stats{margin:0}
+.k-row{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:16px;
+  padding:12px 0;
+  border-top:1px solid var(--k-border)
+}
+.k-row:first-child{border-top:none;padding-top:0}
+.k-row dt{color:var(--k-muted);font-weight:600}
+a{color:#90a7df}
+a:hover{text-decoration:underline}
+</style>
+
 
 
     <!-- Values -->
